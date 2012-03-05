@@ -1,0 +1,32 @@
+Octave code to solve an 18 city travelling salesman problem for 
+18 hawker centres in Singapore.  It works by starting with a basic 
+linear programming relaxation and adding linear constraints valid for true 
+tours until the optimal solution is a true tour.  
+
+The main script is hawkerTour.m. The file cost.m generates a matrix C 
+where C(i,j) is the distance in meters between city i and j.  The other 
+files are simple auxiliary functions used by hawkerTour.m 
+
+The labeling of the hawker centres is given below.  A google map of the 
+locations can be found at bit.ly/zrYEEP
+
+% 1: ABC brickhouse
+% 2: Amoy St
+% 3: Changi
+% 4: Chinatown
+% 5: Chomp Chomp
+% 6: East Coast Lagoon
+% 7: Geylang Serai
+% 8: Ghim Moh
+% 9: Golden Mile Complex
+% 10: Hong Lim
+% 11: Lau Pa Sat
+% 12: Maxwell Rd
+% 13: Newton
+% 14: Old Airport Rd
+% 15: Tampines Round Market
+% 16: Tekka Centre
+% 17: Tiong Bahru
+% 18: Whampoa
+
+
